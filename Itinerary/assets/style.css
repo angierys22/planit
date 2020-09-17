@@ -1,5 +1,5 @@
 body {
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   line-height: 1;
 }
@@ -15,19 +15,24 @@ textarea{
 
 .jumbotron {
   text-align: center;
-  background-color: cornflowerblue;
+  background-color: rgba(220, 220, 220, 0.954);
   color: black;
-  border-bottom: 10px solid rgb(86, 156, 241);
+  border-bottom: 10px solid #c3b1f7;
 }
 
+.dropdownCon {
+  
+  margin-left: 45%;
+}
 
 .description{
+  background-color: #6688f7;
   white-space: pre-wrap;
   text-align: center;
   font-size: 27px;
 }
 
-.time-block{
+.day-block{
   text-align: center;
   border-radius: 15px;
 }
@@ -37,13 +42,13 @@ textarea{
   border-top: 1px solid white;;
 }
 
-.hour {
+.day {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed cornflowerblue;
 }
 
-.past {
+/* .past {
   background-color: #8e8e8f;
   color: white;
 }
@@ -56,7 +61,7 @@ textarea{
 .future {
   background-color: #d0d0d0f1;
   color: white;
-}
+} */
 
 .saveBtn {
   border: 2px solid black;
@@ -87,4 +92,88 @@ textarea{
   font-size: 30px;
   opacity: 0.6;
   transition: all .3s ease-in-out;
+}
+
+.jumbotron img {
+	width: 20%;
+}
+
+.btn-secondary {
+  background-color: #80eec4;
+  color: black;
+  font-weight: bolder;
+}
+.h1Cur {
+text-align: center;
+color: #5142d3;
+}
+.curCon {
+  float: left;
+}
+.curCal {
+	border: 5pt solid #5142d3;
+	background-color: rgb(235, 235, 235);
+}
+
+.currency {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.currency select {
+	background: white;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
+    background-repeat: no-repeat, repeat;
+    background-position: right .2em top 50%, 0 0;
+    background-size: .50em auto, 100%;
+	border: 0;
+	padding-right: 20px;
+	font-size: 22px;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.currency input {
+	border: solid 1pt #c3b1f7;
+	background: white;
+	font-size: 22px;
+	text-align: right;
+}
+.middle {
+	color: #5142d3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.middle button {
+	background-color: #fff;
+	border: 2px solid #c3b1f7;
+	border-radius: 50%;
+	cursor: pointer;
+	color: #5142d3;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	width: 30px;
+	transform: rotate(90deg);
+}
+.middle button:active {
+	transform: rotate(90deg) scale(0.9);
+}
+.middle .rate {
+	background-color: #fff;
+	border: 2px solid #c3b1f7;
+	border-radius: 50px;
+	font-size: 18px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 30px;
+	padding: 0 10px;
+	margin: 30px 15px 30px 25px;
+}
+select:focus, input:focus, button:focus {
+	outline: 0;
 }
