@@ -37,15 +37,15 @@
 		How Long Is Your Trip?
 		</button>
 		<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-		<a class="dropdown-item" href="#">3-Day</a>
-		<a class="dropdown-item" href="#">5-Day</a>
-		<a class="dropdown-item" href="#">7-Day</a>
+		<button class="dropdown-item threeDay">3-Day</button>
+		<button class="dropdown-item fiveDay">5-Day</button>
+		<button class="dropdown-item sevenDay">7-Day</button>
 		</div>
 	</div>
 </div>
 <br>
-	<div class="container">
-        <div id="day1" class="row day-block">
+	<div class="container dayOne">
+        <div id="dayOne" class="row day-block">
             <div class="col-md-1 day">
             Day 1
             </div>
@@ -54,8 +54,8 @@
             <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
         </div>
 	</div>
-	<div class="container">
-        <div id="day2" class="row day-block">
+	<div class="container dayTwo">
+        <div id="dayTwo" class="row day-block">
             <div class="col-md-1 day">
             Day 2
             </div>
@@ -64,8 +64,8 @@
             <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
         </div>
 	</div>
-	<div class="container">
-        <div id="day3" class="row day-block">
+	<div class="container dayThree">
+        <div id="dayThree" class="row day-block">
             <div class="col-md-1 day">
             Day 3
             </div>
@@ -74,8 +74,8 @@
             <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
         </div>
 	</div>
-	<div class="container">
-        <div id="day4" class="row day-block">
+	<div class="container dayFour">
+        <div id="dayFour" class="row day-block">
             <div class="col-md-1 day">
             Day 4
             </div>
@@ -84,8 +84,8 @@
             <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
         </div>
 	</div>
-	<div class="container">
-        <div id="day5" class="row day-block">
+	<div class="container dayFive">
+        <div id="dayFive" class="row day-block">
             <div class="col-md-1 day">
             Day 5
             </div>
@@ -94,8 +94,8 @@
             <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
         </div>
 	</div>
-    <div class="container">
-        <div id="day6" class="row day-block">
+    <div class="container daySix">
+        <div id="daySix" class="row day-block">
             <div class="col-md-1 day">
             Day 6
             </div>
@@ -104,7 +104,7 @@
             <button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
         </div>
 	</div>
-    <div class="container">
+    <div class="container daySeven">
         <div id="day7" class="row day-block">
             <div class="col-md-1 day">
             Day 7
@@ -119,8 +119,8 @@
     <br><hr>
 
     <div class = "container curCon col-6">
-        <h1 class = "h1Cur"> Don't Forget to Check Your Currency</h1>
-
+        <h1> Don't Forget to Check Your Currency</h1>
+<br><br>
 <div class = "container curCal">
 <div class="container">
 	<div class="currency">
@@ -249,9 +249,18 @@
 
 <div class="container-fluid mapBox">
     <form>
-        <div class="form-group">
-        <label for="city or country visiting">Search Location</label>
-        <input placeholder="Where ya goin?">
+        <div class="form-group" id="names">
+		<h1>Be in The Know Before You Go. </h1>
+		<br>
+		<div class = "searchArea">
+        <label for="city or country visiting">Things to Do</label>
+		<input id ="placeInput" placeholder="Search by City/Country?">
+		<button class="submitCity"><i class= "fas fa-search"></i></button>
+		</div>
+		<div id= "#resultsContainer">
+
+
+		</div>
         </div>
 
 
@@ -263,7 +272,9 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-<script src="./assets/logic.js"></script>
+	<script src="https://kit.fontawesome.com/2e0dc01201.js" crossorigin="anonymous"></script>
+	<script src="./assets/logic.js"></script>
+	<script src="./assets/places.js"></script>
 
 </body>
 

@@ -1,46 +1,61 @@
 $(document).ready(function () {
 
-    // vars
-// var days = ["1", "2", "3", "4", "5", "6", "7"]
-// var currentHour = moment().hour();
-// var saveBtn = document.querySelector(".saveBtn") ---> did not need ..doesnt work for multi lines 
 
-// add current day and date with moments to #currentDay
-var update = function () {
-    document.querySelector("#currentDay").innerHTML = moment().format('LLLL');
-}
-setInterval(update, 1000);
+    var dropDownThree = document.querySelector(".threeDay")
+    var dropDownFive = document.querySelector(".fiveDay")
+    var dropDownSeven= document.querySelector(".sevenDay")
 
 
-    //  - read value from time property
-    function readFromLocalStorage() {
+        //  - read value from time property
+        function readFromLocalStorage() {
         //(this is to look for anything saved previously in local storage)
         //assign as text back in element (using its class (.description) and id (specific to each hour)
-        $("#day1  .description").val(localStorage.getItem("day1"));
-        $("#day2 .description").val(localStorage.getItem("day2"));
-        $("#day3 .description").val(localStorage.getItem("day3"));
-        $("#day4 .description").val(localStorage.getItem("day4"));
-        $("#day5 .description").val(localStorage.getItem("day5"));
-        $("#day6 .description").val(localStorage.getItem("day6"));
-        $("#day7 .description").val(localStorage.getItem("day7"));
+        $(".dayOne  .description").val(localStorage.getItem("day1"));
+        $(".dayTwo .description").val(localStorage.getItem("day2"));
+        $(".dayThree .description").val(localStorage.getItem("day3"));
+        $(".dayFour .description").val(localStorage.getItem("day4"));
+        $(".dayFive .description").val(localStorage.getItem("day5"));
+        $(".daySix .description").val(localStorage.getItem("day6"));
+        $(".daySeven .description").val(localStorage.getItem("day7"));
+        }
         
-        // dropdown menu show and hide day count
-        // function startQuiz() {
-        //     // hide start screen
-        //     startScreenEl.setAttribute ("class","hide");
-        //     // un-hide questions section
-        //     questionsEl.setAttribute ("class", "show");
-        //     // start timer
-        //     timerId = setInterval(clockTick, 1000) 
-        //     // show starting time
-        //     timerEl.textContent = time;
-        //     getQuestion();
-        // };
         
+        //add dropdown menu visible/invisible by day count
+        $(dropDownThree).on("click", function(){
+        $(".dayOne") .addClass("visible").removeClass("invisible"),
+        $(".dayTwo") .addClass("visible").removeClass("invisible"),
+        $(".dayThree").addClass("visible").removeClass("invisible"),
+        $(".dayFour").addClass("invisible") .removeClass("visible"),        
+        $(".dayFive").addClass("invisible").removeClass("visible"),
+        $(".daySix").addClass("invisible").removeClass("visible"),
+        $(".daySeven").addClass("invisible").removeClass("visible") 
+        })
+        
+        $(dropDownFive).on("click", function(){
+            $(".dayOne") .addClass("visible").removeClass("invisible"),
+            $(".dayTwo").addClass("visible").removeClass("invisible"),
+            $(".dayThree").addClass("visible") .removeClass("invisible"),
+            $(".dayFour").addClass("visible").removeClass("invisible"),
+            $(".dayFive").addClass("visible").removeClass("invisible"),
+            $(".daySix").addClass("invisible").removeClass("visible"),
+            $(".daySeven").addClass("invisible").removeClass("visible")
+        })
+    
+        $(dropDownSeven).on("click", function(){
+            $(".dayOne").addClass("visible").removeClass("invisible"),
+            $(".dayTwo").addClass("visible").removeClass("invisible"),
+            $(".dayThree").addClass("visible").removeClass("invisible"),
+            $(".dayFour").addClass("visible").removeClass("invisible"),
+            $(".dayFive").addClass("visible").removeClass("invisible"),
+            $(".daySix").addClass("visible").removeClass("invisible"),
+            $(".daySeven") .addClass("visible").removeClass("invisible") 
+        })
+    
+
     
     // add click event to save button class to run function
     $(".saveBtn").click(function writeToLocalStorage() {
-        //(this is to save a value from the text area to local storage, using the hour as the key when save button is clicked)
+        //(this is to save a value from the text area to local storage
         var textIn = $(this).siblings(".description").val();
         var day = $(this).parent().attr("id");
         localStorage.setItem(day, textIn);
@@ -61,7 +76,7 @@ var confirmCancel;
         alert("Your a travel Genius!")
         }
     });
-}
+
     readFromLocalStorage();
 });
 
@@ -105,4 +120,3 @@ function calculate() {
 }
 
 calculate();
-

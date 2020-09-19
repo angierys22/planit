@@ -4,6 +4,14 @@ body {
   line-height: 1;
 }
 
+.jumbotron {
+  text-align: center;
+  background-color: rgba(220, 220, 220, 0.954);
+  color: black;
+  border-bottom: 10px solid #c3b1f7;
+}
+
+
 textarea{
   background: transparent;
   border: none;
@@ -13,17 +21,6 @@ textarea{
   padding: 10px;
 }
 
-.jumbotron {
-  text-align: center;
-  background-color: rgba(220, 220, 220, 0.954);
-  color: black;
-  border-bottom: 10px solid #c3b1f7;
-}
-
-.dropdownCon {
-  
-  margin-left: 45%;
-}
 
 .description{
   background-color: #6688f7;
@@ -48,20 +45,6 @@ textarea{
   border-top: 1px dashed cornflowerblue;
 }
 
-/* .past {
-  background-color: #8e8e8f;
-  color: white;
-}
-
-.present {
-  background-color: rgb(105, 136, 238);
-  color: white;
-}
-
-.future {
-  background-color: #d0d0d0f1;
-  color: white;
-} */
 
 .saveBtn {
   border: 2px solid black;
@@ -77,14 +60,14 @@ textarea{
 }
 
 .clearBtn {
-  float: center;
+  
   border-radius: 10px;
   background-color: #6688f7;
   color: white;
   opacity: 1;
   font-size: 25px;
   padding: 5px;
-  margin: auto;
+  margin-left: 47%;
   display: block;
 }
 
@@ -99,27 +82,42 @@ textarea{
 }
 
 .btn-secondary {
+  font-size: 25px; 
   background-color: #80eec4;
   color: black;
   font-weight: bolder;
+ margin-left: 47%;
 }
-.h1Cur {
+
+h1 {
+font-size: 15pt;
 text-align: center;
 color: #5142d3;
 }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 .curCon {
   float: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 .curCal {
 	border: 5pt solid #5142d3;
 	background-color: rgb(235, 235, 235);
 }
-
 .currency {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
+
 .currency select {
 	background: white;
     background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%20000002%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E');
@@ -133,6 +131,7 @@ color: #5142d3;
     -webkit-appearance: none;
     appearance: none;
 }
+
 .currency input {
 	border: solid 1pt #c3b1f7;
 	background: white;
