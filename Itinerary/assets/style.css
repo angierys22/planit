@@ -48,20 +48,6 @@ textarea{
   border-top: 1px dashed cornflowerblue;
 }
 
-/* .past {
-  background-color: #8e8e8f;
-  color: white;
-}
-
-.present {
-  background-color: rgb(105, 136, 238);
-  color: white;
-}
-
-.future {
-  background-color: #d0d0d0f1;
-  color: white;
-} */
 
 .saveBtn {
   border: 2px solid black;
@@ -103,7 +89,9 @@ textarea{
   color: black;
   font-weight: bolder;
 }
-.h1Cur {
+
+h1 {
+font-size: 15pt;
 text-align: center;
 color: #5142d3;
 }
