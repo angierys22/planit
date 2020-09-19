@@ -26,7 +26,7 @@ var queryUrl ="https://api.foursquare.com/v2/venues/search?ll=40.7,-74&client_id
 $("#submitCity").on("click", function () {
   getPlaces() 
 })
-  console.log("Clicked")
+console.log("Clicked")
 
 
 

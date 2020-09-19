@@ -1,17 +1,9 @@
 $(document).ready(function () {
 
-    // vars
-    // var dayOneEl = document.querySelector("#dayOne")
-    // var dayTwoeEl= document.querySelector("#dayTwo")
-    // var dayThreeEl= document.querySelector("#dayThree")
-    // var dayFourEl= document.querySelector("#dayFour")
-    // var dayFiveEl= document.querySelector("#dayFive")
-    // var daySixEl= document.querySelector("#daySix")
-    // var daySevenEl= document.querySelector("#daySeven")
+
     var dropDownThree = document.querySelector(".threeDay")
     var dropDownFive = document.querySelector(".fiveDay")
     var dropDownSeven= document.querySelector(".sevenDay")
-    var days = [1,2,3,4,5,6,7]
 
 
         //  - read value from time property
@@ -26,9 +18,9 @@ $(document).ready(function () {
         $(".daySix .description").val(localStorage.getItem("day6"));
         $(".daySeven .description").val(localStorage.getItem("day7"));
         }
-        // //for loop for dropdown menu visible and invisible day count
         
         
+        //add dropdown menu visible/invisible by day count
         $(dropDownThree).on("click", function(){
         $(".dayOne") .addClass("visible").removeClass("invisible"),
         $(".dayTwo") .addClass("visible").removeClass("invisible"),
@@ -49,7 +41,7 @@ $(document).ready(function () {
             $(".daySeven").addClass("invisible").removeClass("visible")
         })
     
-    $(dropDownSeven).on("click", function(){
+        $(dropDownSeven).on("click", function(){
             $(".dayOne").addClass("visible").removeClass("invisible"),
             $(".dayTwo").addClass("visible").removeClass("invisible"),
             $(".dayThree").addClass("visible").removeClass("invisible"),
@@ -63,7 +55,7 @@ $(document).ready(function () {
     
     // add click event to save button class to run function
     $(".saveBtn").click(function writeToLocalStorage() {
-        //(this is to save a value from the text area to local storage, using the hour as the key when save button is clicked)
+        //(this is to save a value from the text area to local storage
         var textIn = $(this).siblings(".description").val();
         var day = $(this).parent().attr("id");
         localStorage.setItem(day, textIn);
