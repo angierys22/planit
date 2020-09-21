@@ -95,27 +95,23 @@ text-align: center;
 color: #5142d3;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .curCon {
   float: left;
 }
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+
 .curCal {
 	border: 5pt solid #5142d3;
 	background-color: rgb(235, 235, 235);
 }
+
+#exchange {
+  margin-left: 5%;
+}
 .currency {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .currency select {
@@ -175,4 +171,16 @@ color: #5142d3;
 }
 select:focus, input:focus, button:focus {
 	outline: 0;
+}
+.feedback {
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 20px;
+  padding-top: 10px;
+  margin-right: 30px;
+  float: right;
+  color: #6688f7;
+}
+.hide {
+  display: none;
 }

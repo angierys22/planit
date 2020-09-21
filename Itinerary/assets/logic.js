@@ -4,7 +4,7 @@ $(document).ready(function () {
     var dropDownThree = document.querySelector(".threeDay")
     var dropDownFive = document.querySelector(".fiveDay")
     var dropDownSeven= document.querySelector(".sevenDay")
-
+    var feedbackEl = document.querySelector("#feedback");
 
         //  - read value from time property
         function readFromLocalStorage() {
@@ -53,28 +53,26 @@ $(document).ready(function () {
     
 
     
+
+    
     // add click event to save button class to run function
     $(".saveBtn").click(function writeToLocalStorage() {
         //(this is to save a value from the text area to local storage
         var textIn = $(this).siblings(".description").val();
         var day = $(this).parent().attr("id");
         localStorage.setItem(day, textIn);
-        alert("You're Iternarary has been Saved!")
+        $(feedbackEl).attr("class", "feedback")
+        setTimeout(function() {
+        feedbackEl.setAttribute("class", "feedback hide");
+        }, 1000);
+        feedbackEl.textContent = "Your Itinerary Has Been Saved!" ;    
     }); 
 
-var confirmCancel;
-
     //add button to clear local storage and refresh the page
-    $("#clear").click(function () {
-        confirmCancel = confirm("Decided to Wing it? If so hit Ok to clear your Itenarary");
-        if (confirmCancel) {
-        alert("Act like a local!")
+    $("#confirmClear").click(function () {
         localStorage.clear()
-        location.reload()
-        }
-        else {
-        alert("Your a travel Genius!")
-        }
+        location.reload();
+        
     });
 
     readFromLocalStorage();
@@ -120,3 +118,4 @@ function calculate() {
 }
 
 calculate();
+
