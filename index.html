@@ -10,7 +10,8 @@
 		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
-	<link rel="stylesheet" href="./assets/style.css" />
+	<link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/weather.css">
 
 	<!-- <font> -->
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -291,17 +292,57 @@
 					<input id="placeInput" placeholder="Search by City/Country?">
 					<button class="submitCity"><i class="fas fa-search"></i></button>
 				</div>
-
+<br>
+<br>
+<div class = "container-fluid">
 				<div id="resultsContainer">
 
 
 				</div>
 			</div>
-
+</div>
 	</div>
+
+
+	<!-- weather -->
+	  <!-- Search Container present/past btns -->
+	  <div class="container-fluid">
+        <div class="row">
+            <aside class="col-lg-3 bg-light">
+                
+                    <div id="error"></div>
+
+                </div>
+
+                <ul class="list-group history"></ul>
+                
+            </aside>
+            <!-- <div class="col-lg-9"> -->
+
+
+                <!-- create container for current weather -->
+                <div class = "container">
+                <div class="md-3 col-lg-10 pt-3 content" id=today></div>
+                </div>
+
+                <!-- create container for forecast -->
+                <div class = "container">
+                <div class="five-day-div bg-light p-3 m-3 w-100" id=forecast>
+                <div class = "card">
+
+            </div>
+                </div>
+                </div>
+
+
+
+</body>
+
+</html>
 
 	<footer>
 		<div class="fb-share-button" data-href="https://angierys22.github.io/planiT" data-layout="button"> </div>
+		<br>
 		<p>Copyright © 2020 All rights reserved.</p>
 	</footer>
 	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
@@ -316,8 +357,11 @@
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/2e0dc01201.js" crossorigin="anonymous"></script>
-	<script src="./assets/logic.js"></script>
-	<script src="./assets/places.js"></script>
+	<script src="./assets/js/logic.js"></script>
+	<script src="./assets/js/places.js"></script>
+	<!-- Code to the Weather JavaScript File -->
+	<script src="./assets/js/weather.js"></script>
+
 </body>
 
 </html>
