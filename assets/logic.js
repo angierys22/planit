@@ -1,10 +1,17 @@
 $(document).ready(function () {
-
+    var currentHour = moment().hour();
 
     var dropDownThree = document.querySelector(".threeDay")
     var dropDownFive = document.querySelector(".fiveDay")
     var dropDownSeven= document.querySelector(".sevenDay")
     var feedbackEl = document.querySelector("#feedback");
+
+
+    // add current day and date with moments to #currentDay jumbotron
+    var update = function () {
+    document.querySelector("#currentDay").innerHTML = moment().format('LLLL');
+    }
+    setInterval(update, 1000);
 
         //  - read value from time property
         function readFromLocalStorage() {
@@ -119,3 +126,10 @@ function calculate() {
 
 calculate();
 
+(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
