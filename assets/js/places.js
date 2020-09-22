@@ -29,17 +29,20 @@ $(document).ready(function() {
         var location = data.response.venue.location.formattedAddress[0] + " " + data.response.venue.location.formattedAddress[1];
         var rating = data.response.venue.rating;
         var url = data.response.venue.url;
+        // var bestPhoto = data.response.venue.bestPhoto.prefix+data.response.venue.bestPhoto.source.suffix;
 
         var card = $("<div>").addClass("card");
         var title = $("<h3>").addClass("card-title").text(name);
         card.append(title);
         var body = $("<div>").addClass("card-body");
-        var address  = $("<p>").addClass("card-text").text("Address" + location);
-        body.append(address);
         var rating = $("<h6>").addClass("card-text").text("Rating: " + rating);
         body.append(rating);
+        var address  = $("<p>").addClass("card-text").text("Address" + location);
+        body.append(address);
         var urlTag = $("<a>").addClass("card-text").text("URL: " + url).attr("href", url);
         body.append(urlTag);
+        // var image = $("<img>").addClass("card-text").text("URL: " + bestPhoto).attr("href" + bestPhoto);
+        // body.append(image);
         card.append(body);
         $("#resultsContainer").append(card);
 
@@ -52,6 +55,19 @@ $(document).ready(function() {
     });
 
   };
+
+//   //generate random results
+// function generatePassword(){
+//   confirmCriteria();
+//   createFinalArray();
+//   var password = "";
+// for (var i = 0; i < characterCount; i++) {
+//     var character = totalCharacters[Math.floor(Math.random() * totalCharacters.length)];
+//     password +=character;
+//   };
+// totalCharacters = [];
+// return password
+// };
 
   $(".submitCity").on("click", getPlaces);
 
