@@ -1,5 +1,7 @@
 $(document).ready(function () {
+
     var currentHour = moment().hour();
+
 
     var dropDownThree = document.querySelector(".threeDay")
     var dropDownFive = document.querySelector(".fiveDay")
@@ -7,11 +9,14 @@ $(document).ready(function () {
     var feedbackEl = document.querySelector("#feedback");
 
 
+
     // add current day and date with moments to #currentDay jumbotron
     var update = function () {
     document.querySelector("#currentDay").innerHTML = moment().format('LLLL');
     }
     setInterval(update, 1000);
+
+
 
         //  - read value from time property
         function readFromLocalStorage() {
