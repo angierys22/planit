@@ -7,8 +7,9 @@ body {
 .jumbotron {
   text-align: center;
   background-color: rgba(220, 220, 220, 0.954);
-  color: black;
-  border-bottom: 10px solid #c3b1f7;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0;
 }
 
 
@@ -160,13 +161,12 @@ color: #5142d3;
 .middle .rate {
 	background-color: #fff;
 	border: 2px solid #c3b1f7;
-	border-radius: 50px;
 	font-size: 18px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 30px;
-	padding: 0 10px;
+  height: 60px;
+  overflow: hidden;
 	margin: 30px 15px 30px 25px;
 }
 select:focus, input:focus, button:focus {
@@ -183,4 +183,22 @@ select:focus, input:focus, button:focus {
 }
 .hide {
   display: none;
+}
+
+button, input {
+  overflow: auto;
+}
+
+.headertext {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.headertext2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Arial, Helvetica, sans-serif;
 }
