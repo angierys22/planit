@@ -1,6 +1,5 @@
 $(document).ready(function() {
   function getPlaces(event) {
-
     
     event.preventDefault();
     $("#resultsContainer").empty();
