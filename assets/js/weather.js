@@ -63,7 +63,7 @@ $(document).ready(function() {
                     // loop over all forecasts by 3-hour increments
                     for (var i = 0; i < data.list.length; i++) {
     
-                        if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
+                        if (data.list[i].dt_txt.indexOf("15:00:00") !== - 1) {
                             
                             // create HTML for forecast row
     
