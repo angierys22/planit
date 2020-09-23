@@ -7,6 +7,12 @@
     height: 100%;
 } */
 
+.weather {
+    width: 85%;
+    display: inline-table;
+    margin-left: 15%;
+} 
+
 .listbtn {
     background-color:  #c1c2c3;
     color: #000000;
@@ -21,4 +27,9 @@
     background-color:  #c1c2c3;
     color: #000000;
     width: 100%;
+}
+
+.card {
+    border: 2pt solid #ffffff;
+    ;
 }

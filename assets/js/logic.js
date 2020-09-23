@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var currentHour = moment().hour();
+    // var currentHour = moment().hour();
 
 
     var dropDownThree = document.querySelector(".threeDay")
