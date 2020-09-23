@@ -13,7 +13,7 @@ $(document).ready(function() {
       
     }).then(function(response) {
       console.log(response)
-      for (var i =0; i < 4; i++){
+      for (var i =0; i < 10; i++){
       var venueId = response.response.groups[0].items[i].venue.id;
       console.log(venueId)
 
@@ -56,18 +56,6 @@ $(document).ready(function() {
 
   };
 
-//   //generate random results
-// function generatePassword(){
-//   confirmCriteria();
-//   createFinalArray();
-//   var password = "";
-// for (var i = 0; i < characterCount; i++) {
-//     var character = totalCharacters[Math.floor(Math.random() * totalCharacters.length)];
-//     password +=character;
-//   };
-// totalCharacters = [];
-// return password
-// };
 
   $(".submitCity").on("click", getPlaces);
 
