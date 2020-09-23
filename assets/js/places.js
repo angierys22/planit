@@ -37,7 +37,7 @@ $(document).ready(function() {
         var body = $("<div>").addClass("card-body");
         var rating = $("<h6>").addClass("card-text").text("Rating: " + rating);
         body.append(rating);
-        var address  = $("<p>").addClass("card-text").text("Address" + location);
+        var address  = $("<p>").addClass("card-text").text("Address: " + location);
         body.append(address);
         var urlTag = $("<a>").addClass("card-text").text("URL: " + url).attr("href", url);
         body.append(urlTag);
