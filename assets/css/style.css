@@ -113,6 +113,7 @@ color: #000000;
   text-align: center;
   color: #000000;
 }
+
 .hide {
   display: none;
 }
@@ -160,23 +161,26 @@ footer {
 }
 
 #resultsContainer {
-  float: right ;
+
+  display: block;
 }
-/* .container-fluid {
+.container-fluid {
   text-align: center;
-} */
+}
 .bg-light {
   background-color: #ffffff !important;
 }
-/* .scroller {
+
+
+.scroller {
   width: 400px;
-  height: 630px;
+  height: 350px;
   overflow-y: scroll;
   scrollbar-color: rebeccapurple green;
   scrollbar-width: thin;
   display: block;
   margin: 0px auto; 
-}*/
+}
 
 .Card {
   border: 1px solid #ffffff;
