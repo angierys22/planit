@@ -13,12 +13,7 @@ $(document).ready(function() {
 
 
         function getWeather(searchValue) {
-    
-            // create a var and assign the value received back from API
-        
-            
             // make a request to API openweahtermap
-            
             $.ajax({
                 url: queryUrl + searchValue + "&appid=" + apiKey + "&units=imperial",
                 method: "GET",
@@ -31,7 +26,6 @@ $(document).ready(function() {
                     $("#today").empty();
     
                     // create html content for today weather
-    
                     var wcard = $("<div>").addClass("card");
                     var wbody = $("<div>").addClass("card-body");
                     var wtitle = $("<h3>").addClass("card-title").text(data.name + "(" + new Date().toLocaleDateString() + ")");
@@ -65,10 +59,8 @@ $(document).ready(function() {
     
                 //show weather
                 .then(function (data) {
-                    // create title and empty row
-                
+                    // create title and empty row   
                     $("#forecast").html("<h4>5-Day Forecast:</h4>").append("<div class=\"row\">")
-    
                     // loop over all forecasts by 3-hour increments
                     for (var i = 0; i < data.list.length - 1; i++) {
     
@@ -86,7 +78,6 @@ $(document).ready(function() {
     
     
                             // merge and add to the page
-    
                             col.append(card);
                             card.append(body);
                             body.append(title, image, temp, humidity);
@@ -136,20 +127,4 @@ $(document).ready(function() {
     
         }
     
-    
-    
-    // get any history
-    var history = JSON.parse(window.localStorage.getItem("history")) || [];
-    // console.log(history)
-    if (history.length > 0) {
-    getWeather(history[0]);
-    }
-    else {
-        
-    }
-    
-    for (var i = 0; i < history.length; i++) {
-        createRow(history[i]);
-    }
-    
-    });
+});
