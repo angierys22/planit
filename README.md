@@ -1,5 +1,7 @@
 # planiT! 
+https://angierys22.github.io/planit
 
+![](https://github.com/angierys22/planit/blob/master/assets/image/planiT-wp.png)
 
 A Great new way to organize your next Trip 
 

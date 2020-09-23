@@ -5,6 +5,7 @@ $(document).ready(function() {
     $("#resultsContainer").empty();
 
     var city = $("#placeInput").val();
+    var queryUrl = "https://api.foursquare.com/v2/venues/explore?near=" + city + "&client_id=CQKCUPKTJE0SLVISTYVAQVEFLRKZ35VR3I1UUEPABKDGTEF1&client_secret=52IQTN3AR0DC22MA52IQUSHJTGELILYWLGMD0KR5HSTVWD5W&v=20200919";
     var queryUrl = "https://api.foursquare.com/v2/venues/explore?near=" + city + "&client_id=CQKCUPKTJE0SLVISTYVAQVEFLRKZ35VR3I1UUEPABKDGTEF1&client_secret=AJAKK0DSJ02FY1P4ND5I4P5FLW3DW2WX1OMQ3L34IXMZURHP&v=20200919";
     
     $.ajax({
@@ -17,6 +18,7 @@ $(document).ready(function() {
       var venueId = response.response.groups[0].items[i].venue.id;
       console.log(venueId)
 
+      var recomendURL = "https://api.foursquare.com/v2/venues/" + venueId + "/?&c&client_id=CQKCUPKTJE0SLVISTYVAQVEFLRKZ35VR3I1UUEPABKDGTEF1&client_secret=52IQTN3AR0DC22MA52IQUSHJTGELILYWLGMD0KR5HSTVWD5W&v=20200919";
       var recomendURL = "https://api.foursquare.com/v2/venues/" + venueId + "/?&c&client_id=CQKCUPKTJE0SLVISTYVAQVEFLRKZ35VR3I1UUEPABKDGTEF1&client_secret=AJAKK0DSJ02FY1P4ND5I4P5FLW3DW2WX1OMQ3L34IXMZURHP&v=20200919";
 
       $.ajax({
