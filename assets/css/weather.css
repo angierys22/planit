@@ -1,18 +1,16 @@
-#dashboard{
+/* #dashboard{
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif;
     color: rgb(212, 82, 53);
     background-image:url("./images/weatherbackground.png");
     background-size: cover;
     height: 100%;
-}
+} */
 
 .listbtn {
-    background-color:  rgb(94, 45, 240);
-    color: #ffffff;
-
+    background-color:  #c1c2c3;
+    color: #000000;
 }
-
 
 .left_div{
     background-color: whitesmoke; 
@@ -20,7 +18,7 @@
 }
 
 .card-body{
-    background-color:  rgb(94, 45, 240);
-    color: white;
-    width: auto;
+    background-color:  #c1c2c3;
+    color: #000000;
+    width: 100%;
 }

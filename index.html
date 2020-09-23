@@ -11,25 +11,22 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'>
 	<link rel="stylesheet" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="./assets/css/weather.css">
+	<link rel="stylesheet" href="./assets/css/weather.css">
 
 	<!-- <font> -->
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
-
-
-
 	<title>PlaniT</title>
 </head>
 
 <body>
 	<header class="jumbotron">
-		<h1 class="font-italic font-weight-bold text-white display-3">
+		<div class="font-italic font-weight-bold text-white display-3">
 			<img class="headertext" src="./assets/image/planIt-Logo.png" alt="PlaniT!">
 			<img src="./assets/image/header-img.jpeg" alt="Globe header image" style="width:100%;height: 500px;">
-		</h1>
+		</div>
 		<br>
-		<p class="font-weight-bold lead headertext2">Your Trip Itinerary Organized</p>
-		<p id="currentDay" class="font-weight-bold lead"></p>
+		<h1 class="font-weight-bold lead headertext2">Your Trip Itinerary Organized</h1>
+		<p id="currentDay" class="font-weight-bold lead headertext3"></p>
 	</header>
 
 	<!-- Day blocks go here -->
@@ -123,7 +120,8 @@
 
 	<!-- modal added  -->
 	<!-- Button trigger modal -->
-	<button id="clear" type="button" class="btn btn-primary clearBtn clearBtn:Hover" data-toggle="modal" data-target="#staticBackdrop">
+	<button id="clear" type="button" class="btn btn-primary clearBtn clearBtn:Hover" data-toggle="modal"
+		data-target="#staticBackdrop">
 		Clear Itinerary
 	</button>
 
@@ -139,7 +137,7 @@
 					</button>
 				</div>
 				<div class="modal-body">
-				Act Like a Local And Hit Ok to Clear Or Hit Cancel And Stick To The Schedule?
+					Act Like a Local And Hit Ok to Clear Or Hit Cancel And Stick To The Schedule?
 				</div>
 				<div class="modal-footer">
 					<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -152,8 +150,8 @@
 	<br>
 
 
-	<div class="container curCon col-6">
-		<h1> Leaving the Country? ...Don't Forget to Check Your Currency</h1>
+	<div class="curCon">
+		<h2> Leaving the Country? ...Don't Forget to Check Your Currency</h2>
 		<br><br>
 		<div class="container curCal col-6">
 			<div class="container">
@@ -282,64 +280,41 @@
 
 	</div>
 
-	<div class="container-fluid mapBox">
+	<div class="container-fluid">
 		<form>
 			<div class="form-group" id="names">
-				<h1>Be in The Know Before You Go. </h1>
+				<h2>Be in The Know Before You Go. </h2>
 				<br>
 				<div class="searchArea">
-					<label for="city or country visiting">Things to Do</label>
-					<input id="placeInput" placeholder="Search by City/Country?">
+					<label for="city or country visiting">Get The Stats: </label>
+					<input id="placeInput" placeholder="Search by City/Country">
 					<button class="submitCity"><i class="fas fa-search"></i></button>
 				</div>
-<br>
-<br>
-<!-- <div class = "container-fluid"> -->
-				<div id="resultsContainer">
-				</div>
+		
+				<br>
+				<br>
+				<!-- <div class = "container-fluid"> -->
+				<div class="scroller" id="resultsContainer"></div>
 			</div>
-</div>
+		</form>
 	</div>
 
-
 	<!-- weather -->
-	<!-- Search Container present/past btns -->
-	<div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-3 bg-light">
-                
-                    <div id="error"></div>
 
-                </div>
-                
-            </div>
-            <!-- <div class="col-lg-9"> -->
-
-
-                <!-- create container for current weather -->
-                <div class = "container curWeather">
-                <div class="md-3 col-lg-10 pt-3 content" id=today></div>
-                </div>
-
-                <!-- create container for forecast -->
-                <div class = "container forecastCtn">
-                <div class="five-day-div bg-light p-3 m-3 w-100" id=forecast>
-                <div class = "card">
-
-            </div>
-                </div>
-                </div>
-
-
-
-</body>
-
-</html>
-
+	<div class="weather">
+		<!-- create container for forecast -->
+		<div class="forecastCtn"></div>
+		<div class="five-day-div" id=forecast></div>
+		<div class="card"></div>
+	</div>
+	
 	<footer>
-		<div class="fb-share-button" data-href="https://angierys22.github.io/planit" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fangierys22.github.io%2Fplanit&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share to Facebook</a></div>
+		<div class="fb-share-button" data-href="https://angierys22.github.io/planit" data-layout="button"
+			data-size="small"><a target="_blank"
+				href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fangierys22.github.io%2Fplanit&amp;src=sdkpreparse"
+				class="fb-xfbml-parse-ignore">Share to Facebook</a></div>
 		<br>
-		<p>Copyright © 2020 All rights reserved.</p>
+		<p>© planiT! 2020 | All rights reserved.</p>
 	</footer>
 	<!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -361,4 +336,3 @@
 </body>
 
 </html>
-
