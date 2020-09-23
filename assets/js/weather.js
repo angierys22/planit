@@ -60,11 +60,11 @@ $(document).ready(function() {
                 //show weather
                 .then(function (data) {
                     // create title and empty row   
-                    $("#forecast").html("<h4>5-Day Forecast:</h4>").append("<div class=\"row\">")
+                    $("#forecast").html("<h4>Next 5 Days Ahead:</h4>").append("<div class=\"row\">")
                     // loop over all forecasts by 3-hour increments
-                    for (var i = 0; i < data.list.length - 1; i++) {
+                    for (var i = 0; i < data.list.length; i++) {
     
-                        if (data.list[i].dt_txt.indexOf("15:00:00") !== -1) {
+                        if (data.list[i].dt_txt.indexOf("15:00:00") !== - 1) {
                             
                             // create HTML for forecast row
     
