@@ -73,13 +73,14 @@ textarea{
 
 }
 
-.btn-secondary {
-  font-size: 25px; 
+.btn-secondary { 
   background-color: #c1c2c3;
   color: black;
   font-weight: bolder;
-  margin: 0px auto;
   display: block;
+  width: 15%;
+  margin-left: 45%;
+  margin-right: 30%;
 }
 
 .clearBtn {
@@ -89,9 +90,11 @@ textarea{
   color: #000000;
   opacity: 1;
   font-size: 25px;
-  padding: 5px;
+  padding-top: 5px;
   display: block;
-  margin: 0 auto;
+  width: 15%;
+  margin-left: 45%;
+  margin-right: 30%;
 }
 
 .clearBtn:Hover {
@@ -175,6 +178,12 @@ footer {
   background-color: #ffffff !important;
 }
 
+.searchArea {
+  float: right;
+  width: 15%;
+  margin-left: 45%;
+  margin-right: 30%;
+}
 
 .scroller {
   width: 400px;
