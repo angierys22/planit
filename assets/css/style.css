@@ -1,5 +1,5 @@
 * {
-width: 100%;
+width: 100%
 }
 
 body {
@@ -39,6 +39,7 @@ textarea{
   margin-left: 45%;
   margin-right: 30%;
 }
+
 
 .description{
   background-color: #fbe7d7;
@@ -82,7 +83,7 @@ textarea{
   padding-bottom: 1%;
 
 }
-
+/* 
 .btn-secondary { 
   background-color: #c1c2c3;
   color: black;
@@ -91,7 +92,12 @@ textarea{
   width: 15%;
   margin-left: 45%;
   margin-right: 30%;
+} */
+.dropdown-toggle{  
+width: 35%;
+margin-left: 10%;
 }
+
 
 .clearBtn {
   
@@ -206,3 +212,4 @@ footer {
 .Card {
   border: 1px solid #ffffff;
 }
+
