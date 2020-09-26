@@ -1,0 +1,54 @@
+
+.fourSquare {
+    background-color: #fbe7d7;
+    float: left;
+
+}
+  
+form {
+    width: 50%;
+    align-content: center;
+    
+}
+
+.bg-light {
+    background-color: #ffffff !important;
+}
+.intineraryCon {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchArea {
+    border: 5pt solid white; 
+    float: left;   
+    align-items: center;
+    display: block;
+    margin-top: 2%;
+    margin-left: 50%;
+    padding-bottom: 3%;
+
+
+}
+
+#resultsContainer {
+    float: left;
+    display: block;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+
+}
+
+.scroller {
+    width: 400px;
+    height: 650px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    display: block;
+    float: left important!;  
+    border: 5pt solid white;
+}

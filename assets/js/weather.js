@@ -59,7 +59,7 @@ $(document).ready(function() {
                 //show weather
                 .then(function (data) {
                     // create title and empty row   
-                    $("#forecast").html("<h4>Weather for the Next Five Days:</h4>").append("<div class=\"row\">")
+                    $("#forecast").html("<h4> Weather for the Next Five Days:</h4>").append("<div class=\"row\">")
                     // loop over all forecasts by 3-hour increments
                     for (var i = 0; i < data.list.length; i++) {
     

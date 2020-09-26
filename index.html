@@ -14,7 +14,9 @@
 	<link rel="stylesheet" href="./assets/css/style.css" />
 	<link rel="stylesheet" href="./assets/css/weather.css">
 	<link rel="stylesheet" href="./assets/css/currency.css">
-
+	<link rel="stylesheet" href="./assets/css/itinerary.css">
+	<link rel="stylesheet" href="./assets/css/places.css">
+	
 	<!-- <font> -->
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 	<title>PlaniT</title>
@@ -24,13 +26,15 @@
 	<header class="jumbotron">
 		<div class="font-italic font-weight-bold text-white display-3">
 			<img class="headertext" src="./assets/image/planIt-Logo.png" alt="PlaniT!">
-			<img src="./assets/image/header-img.jpeg" alt="Globe header image" style="width:100%;height: 500px;">
+			<img class="bgPicture" src="./assets/image/header-img.jpeg" alt="Globe header image" style="width:100%;height: 500px;">
 		</div>
 		<br>
 		<h1 class="font-weight-bold lead headertext2">Your Trip Itinerary Organized</h1>
 		<p id="currentDay" class="font-weight-bold lead headertext3"></p>
 	</header>
 
+<!-- itinerary -->
+	<div class = "itineraryCon clearfix col-6">
 	<!-- Day blocks go here -->
 	<div id="feedback" class="feedback hide"></div>
 	<div class=" dropdownCon">
@@ -148,15 +152,39 @@
 			</div>
 		</div>
 	</div>
-	<hr>
-	<br>
+</div>
+
+<!-- places search -->
+<div class="fourSquare clearfix col-6">
+		
+	<div class="form-group" id="names">
+		<h2>Be in The Know Before You Go.</h2>
+		<form>
+			<div class="searchArea">
+			<label for="city or country visiting">Get The Stats: </label>
+			<input id="placeInput" placeholder="Search by City/Country">
+			<button class="submitCity"><i class="fas fa-search"></i></button>
+		</form>
+	</div>
+<div class="scroller" id="resultsContainer"></div>
+</div>	
+</div>
+</div>
 
 
-	<div class="curCon">
+
+
+
+
+				<br>
+				<br>
+
+		
+
+	<div class="curCon clearfix col-6">
 		<h2> Leaving the Country? ...Don't Forget to Check Your Currency</h2>
 		<br><br>
-		<div class="container curCal col-6">
-			<div class="container">
+		<div class="curCal clearfix">
 				<div class="currency">
 					<select id="from_currency">
 						<option value="AED">AED</option>
@@ -281,25 +309,79 @@
 		</div>
 
 	</div>
+	
 
-	<div class="container-fluid">
-		<form>
-			<div class="form-group" id="names">
-				<h2>Be in The Know Before You Go.</h2>
-				<div class="searchArea">
-					<label for="city or country visiting">Get The Stats: </label>
-					<input id="placeInput" placeholder="Search by City/Country">
-					<button class="submitCity"><i class="fas fa-search"></i></button>
-				</form>
+<!-- budget col -->
+<!-- can you make these show up next to eachother> -->
+	<!-- <div class="budgetCtn col-sm col-6"> -->
+
+	
+		<br>
+		<br>
+		<br>
+		<br>
+		C O M I N G    S O O N !
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<!-- <div class="budget-section">
+	
+			<div class="budget col col-md col-sm">
+			<h4>budget</h4>
+			<p class="amount">$ <span id="budgetAmount">0</span></p>
+	
+			<div class="expenses col col-md col-sm">
+			<h4>expenses</h4>
+			<p class="exp-amount">$ <span id="expensesAmount">0</span></p>
+
+	
+			<div class="balance col col-md col-sm">
+			<h4>balance</h4>
+			<p class="amount bala">$ <span id="balanceAmount">0</span></p>
 			</div>
-			</div>
-				<br>
-				<br>
-				<!-- <div class = "container-fluid"> -->
-				<div class="scroller" id="resultsContainer"></div>
-			</div>
+
+			have this under the total... in the square next to the cur 
+		<div class="budget-form col-6" id="budgetform">
+			<form id="addForm">
+			<label for=""> Make a budget</label> <br />
+			<input type="number" id="number" /> <br />
+			<button type="submit">Add Budget</button>
+			</form>
+		</div>
+		<div class="expense-form col-6" id="expense-form">
+			<form action="" id="expForm">
 		
+		<div class="">
+				<label for="">please enter your expense</label> <br />
+				<input type="text" id="expName" />
+		</div>
+		<div class="">
+				<label for="">please enter expense amount</label> <br />
+				<input type="number" id="expNumber" />
+		</div>
+		<button type="submit" id="submitExpen">Add expense</button>
+			</form>
+		</div>
+		<div class="edit-form col-6" id="editForm">
+			<form action="" id="saveEdit">
+			<div class="">
+			<label for="">Edit your expense</label> <br />
+			<input type="text" id="editExpName" />
+			</div>
+			<div class="">
+			<label for="">Edit expense amount</label> <br />
+			<input type="number" id="editExpNumber" />
+			</div>
+			<button type="submit">Save changes</button>
+			</form>
+		</div>
+		</div> -->
+	
 	</div>
+	<hr>
+	<br>
 
 	<!-- weather -->
 
@@ -309,7 +391,10 @@
 		<div class="five-day-div" id=forecast></div>
 		<div class="card"></div>
 	</div>
-	
+
+
+
+
 	<footer>
 		<div class="fb-share-button" data-href="https://angierys22.github.io/planit" data-layout="button"
 			data-size="small"><a target="_blank"
@@ -330,11 +415,16 @@
 		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
 		crossorigin="anonymous"></script>
 	<script src="https://kit.fontawesome.com/2e0dc01201.js" crossorigin="anonymous"></script>
-	<script src="./assets/js/logic.js"></script>
+	<!-- index js -->
+	<script src="./assets/js/itinerary.js"></script>
+	<!-- foursquare js -->
 	<script src="./assets/js/places.js"></script>
+		<!-- currency js -->
+		<script src="./assets/js/currency.js"></script>
 	<!-- Code to the Weather JavaScript File -->
 	<script src="./assets/js/weather.js"></script>
-
+	<!-- budget js -->
+	<script src="./assets/js/budget.js"></script>
 </body>
 
 </html>
