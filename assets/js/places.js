@@ -15,7 +15,7 @@ $(document).ready(function() {
       
     }).then(function(response) {
       console.log(response)
-      for (var i =0; i < 1000; i++){
+      for (var i =0; i < 10; i++){
       var venueId = response.response.groups[0].items[i].venue.id;
       console.log(venueId)
 
