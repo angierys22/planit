@@ -52,7 +52,7 @@
   .day {
     background-color: #ffffff;
     color: #000000;
-    border-top: 1px dashed ;
+    align-content: center;
   }
   
   
@@ -79,12 +79,12 @@
   .dropdown-toggle{  
   margin: auto;
   display: block;
-  width: 25%;
+  width: 70%;
   }
 
   .dropdown-menu {
     margin: auto;
-    width: 25%;
+    width: 70%;
     text-align: center;
     background-color: #c1c2c3;
   }

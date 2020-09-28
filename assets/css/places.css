@@ -2,20 +2,17 @@
 .fourSquare {
     background-color: #fbe7d7;
     float: left;
-
 }
-  
+
 form {
     width: 50%;
     align-content: center;
     
 }
 
-.bg-light {
-    background-color: #ffffff !important;
-}
-.intineraryCon {
 
+
+.intineraryCon {
     justify-content: center;
     align-items: center;
 
@@ -27,7 +24,7 @@ form {
     align-items: center;
     display: block;
     margin-top: 2%;
-    margin-left: 50%;
+    margin-left: 55%;
     padding-bottom: 3%;
 
 
@@ -38,17 +35,21 @@ form {
     display: block;
     align-items: center;
     margin-top: 5%;
-    margin-left: 15%;
+    /* margin-left: 20%; */
     margin-bottom: 5%;
 
 }
 
 .scroller {
-    width: 400px;
+    width: 98%;
     height: 650px;
     overflow-y: scroll;
     scrollbar-width: thin;
     display: block;
     float: left important!;  
     border: 5pt solid white;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 1%;
+    margin-bottom: 5%;
 }
