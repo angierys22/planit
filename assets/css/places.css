@@ -53,3 +53,9 @@ form {
     margin-left: 1%;
     margin-bottom: 5%;
 }
+
+.card-body{
+    text-align: center;
+    background-color:  #c1c2c3;
+    color: #000000;
+}

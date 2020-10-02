@@ -16,6 +16,8 @@
 	<link rel="stylesheet" href="./assets/css/currency.css">
 	<link rel="stylesheet" href="./assets/css/itinerary.css">
 	<link rel="stylesheet" href="./assets/css/places.css">
+
+
 	
 	<!-- <font> -->
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
@@ -26,13 +28,15 @@
 	<header class="jumbotron">
 		<div class="font-italic font-weight-bold text-white display-3">
 			<img class="headertext" src="./assets/image/planIt-Logo.png" alt="PlaniT!">
-			<img class="bgPicture" src="./assets/image/header-img.jpeg" alt="Globe header image" style="width:100%;height: 500px;">
+			<img class="bgPicture" id = "jumboBg" src="./assets/image/header-img.jpeg" alt="Globe header image" style="width:100%;height: 500px;">
 		</div>
 		<br>
 		<h1 class="font-weight-bold lead headertext2">Your Trip Itinerary Organized</h1>
 		<p id="currentDay" class="font-weight-bold lead headertext3"></p>
 	</header>
 
+<!-- itinerary and foursqaure  -->
+<div class = "topSection Container clearfix col-12">
 <!-- itinerary -->
 	<div class = "itineraryCon clearfix col-6">
 	<!-- Day blocks go here -->
@@ -53,9 +57,7 @@
 	<br>
 	<div class="container dayOne">
 		<div id="dayOne" class="row day-block">
-			<div class="col-md-1 day">
-				Day 1
-			</div>
+			<div class="col-md-1 day"> <br> Day 1 <br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -63,9 +65,7 @@
 	</div>
 	<div class="container dayTwo">
 		<div id="dayTwo" class="row day-block">
-			<div class="col-md-1 day">
-				Day 2
-			</div>
+			<div class="col-md-1 day"><br> Day 2 <br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -73,9 +73,7 @@
 	</div>
 	<div class="container dayThree">
 		<div id="dayThree" class="row day-block">
-			<div class="col-md-1 day">
-				Day 3
-			</div>
+			<div class="col-md-1 day"><br> Day 3 <br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -83,9 +81,7 @@
 	</div>
 	<div class="container dayFour">
 		<div id="dayFour" class="row day-block">
-			<div class="col-md-1 day">
-				Day 4
-			</div>
+			<div class="col-md-1 day"><br> Day 4 <br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -93,9 +89,7 @@
 	</div>
 	<div class="container dayFive">
 		<div id="dayFive" class="row day-block">
-			<div class="col-md-1 day">
-				Day 5
-			</div>
+			<div class="col-md-1 day"><br> Day 5 <br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -103,9 +97,7 @@
 	</div>
 	<div class="container daySix">
 		<div id="daySix" class="row day-block">
-			<div class="col-md-1 day">
-				Day 6
-			</div>
+			<div class="col-md-1 day"><br> Day 6 <br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -113,9 +105,7 @@
 	</div>
 	<div class="container daySeven">
 		<div id="day7" class="row day-block">
-			<div class="col-md-1 day">
-				Day 7
-			</div>
+			<div class="col-md-1 day"><br> Day 7<br> </div>
 			<textarea class="col-md-10 description">
             </textarea>
 			<button class="btn saveBtn col-md-1"><i class="fas fa-save"></i></button>
@@ -165,22 +155,21 @@
 			<input id="placeInput" placeholder="Search by City/Country">
 			<button class="submitCity"><i class="fas fa-search"></i></button>
 		</form>
-	</div>
+		</div>
+	
+
 <div class="scroller" id="resultsContainer"></div>
-</div>	
+
 </div>
 </div>
-
-
-
-
 
 
 				<br>
 				<br>
 
 		
-
+<!-- currency and future budget -->
+<div class = "row secondSection Container clearfix col-">
 	<div class="curCon clearfix col-6">
 		<h2> Leaving the Country? ...Don't Forget to Check Your Currency</h2>
 		<br><br>
@@ -308,89 +297,35 @@
 			</div>
 		</div>
 
-	</div>
 	
-
-<!-- budget col -->
-<!-- can you make these show up next to eachother> -->
-	<!-- <div class="budgetCtn col-sm col-6"> -->
-
-	
-		<br>
-		<br>
-		<br>
-		<br>
-		C O M I N G    S O O N !
-
-		<br>
-		<br>
-		<br>
-		<br>
-		<!-- <div class="budget-section">
-	
-			<div class="budget col col-md col-sm">
-			<h4>budget</h4>
-			<p class="amount">$ <span id="budgetAmount">0</span></p>
-	
-			<div class="expenses col col-md col-sm">
-			<h4>expenses</h4>
-			<p class="exp-amount">$ <span id="expensesAmount">0</span></p>
-
-	
-			<div class="balance col col-md col-sm">
-			<h4>balance</h4>
-			<p class="amount bala">$ <span id="balanceAmount">0</span></p>
-			</div>
-
-			have this under the total... in the square next to the cur 
-		<div class="budget-form col-6" id="budgetform">
-			<form id="addForm">
-			<label for=""> Make a budget</label> <br />
-			<input type="number" id="number" /> <br />
-			<button type="submit">Add Budget</button>
-			</form>
-		</div>
-		<div class="expense-form col-6" id="expense-form">
-			<form action="" id="expForm">
-		
-		<div class="">
-				<label for="">please enter your expense</label> <br />
-				<input type="text" id="expName" />
-		</div>
-		<div class="">
-				<label for="">please enter expense amount</label> <br />
-				<input type="number" id="expNumber" />
-		</div>
-		<button type="submit" id="submitExpen">Add expense</button>
-			</form>
-		</div>
-		<div class="edit-form col-6" id="editForm">
-			<form action="" id="saveEdit">
-			<div class="">
-			<label for="">Edit your expense</label> <br />
-			<input type="text" id="editExpName" />
-			</div>
-			<div class="">
-			<label for="">Edit expense amount</label> <br />
-			<input type="number" id="editExpNumber" />
-			</div>
-			<button type="submit">Save changes</button>
-			</form>
-		</div>
-		</div> -->
-	
-	</div>
 	<hr>
 	<br>
+<!-- <div class = "budget clearfix col-6">
 
-	<!-- weather -->
+</div> -->
+</div>
 
-	<div class="weather">
-		<!-- create container for forecast -->
-		<div class="forecastCtn"></div>
-		<div class="five-day-div" id=forecast></div>
-		<div class="card"></div>
+
+
+	<!-- <div class="weather"> -->
+		<!-- weather -->
+	<!-- Search Container present/past btns -->
+                
+                <!-- create container for current weather -->
+                <!-- <div class = "container currentWeather col-6">
+                <div class="md-3 col-lg-10 pt-3 content" id=today></div>
+                </div> -->
+
+                <!-- create container for forecast -->
+                <div class = "forecastCon clearfix thirdSection col-xs-12">
+                <div class="five-day-div" id=forecast>
+                <!-- <div class = "card col-xs-12">	 -->
+	
+				</div>
 	</div>
+</div>
+</div>
+</div>
 
 
 
