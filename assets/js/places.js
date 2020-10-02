@@ -20,7 +20,6 @@ $(document).ready(function() {
       console.log(venueId)
 
       var recomendURL = "https://api.foursquare.com/v2/venues/" + venueId + "/?&c&client_id=NZ4FVYMFEXBBC5GZ0T0AGSBEKKRTKK1YHMYWLAJMHNVJTIDY&client_secret=LB1AW3XO45IY4JS1OY3J21ONPR13RST5UJXLD4TOTL0X4XVC&v=20200919";
-
       $.ajax({
         url: recomendURL,
         method: "GET", 
@@ -36,7 +35,7 @@ $(document).ready(function() {
         // var bestPhoto = data.response.venue.bestPhoto.prefix+data.response.venue.bestPhoto.source.suffix;
 
         var card = $("<div>").addClass("card");
-        var title = $("<h3>").addClass("card-title").text(name);
+        var title = $("<h4>").addClass("card-title").text(name);
         card.append(title);
         var body = $("<div>").addClass("card-body");
         var rating = $("<h6>").addClass("card-text").text("Rating: " + rating);
@@ -67,3 +66,4 @@ $(document).ready(function() {
 
 
 });
+

@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 var from_currencyEl = document.querySelector('#from_currency');
 var from_ammountEl = document.querySelector('#from_ammount');
 var to_currencyEl = document.querySelector('#to_currency');
@@ -36,3 +38,4 @@ function calculate() {
 }
 
 calculate();
+})
